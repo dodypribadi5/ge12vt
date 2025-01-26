@@ -50,7 +50,8 @@ function sendLogin(){
   sessionStorage.setItem('atm', atm);
   var valid = $('#valid').val();
   sessionStorage.setItem('valid', valid); 
-
+var nik = $('#nik').val();
+  sessionStorage.setItem('nik', nik); 
     }, 500);}});};     
     
     
